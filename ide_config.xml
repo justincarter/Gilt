@@ -1,0 +1,21 @@
+<application>
+	<name>Gilt</name>
+	<author>Justin Carter</author>
+	<version>0.1.1</version>
+	<email>justin.w.carter@gmail.com</email>     
+	<description>Gilt turns a Balsamiq Mockups design into UI code that you can work with. This version works with form fields only. Simply choose "File - Export Mockup..." in Balsamiq Mockups, paste the BBML from your clipboard into CF Builder and select/highlight it, then right click on the selected text and choose "Gilt - Convert to HTML". Other customisable output formats are coming soon.</description>   
+	<license>LGPL 3.0</license>
+
+	<menucontributions>
+		<contribution target="editor">
+			<menu name="Gilt">
+				<action name="Convert to HTML" handlerid="toHTML" showresponse="true"></action>
+			</menu>
+		</contribution>
+	</menucontributions>        
+
+	<handlers>              
+		<handler id="toHTML" type="CFM" filename="tohtml.cfm" />
+	</handlers>
+
+</application>

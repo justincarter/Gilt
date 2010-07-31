@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<format type="html">
+	<control name="Button">
+		<![CDATA[<ext:button value="{{text}}" />]]>
+	</control>
+	<control name="CheckBox">
+		<![CDATA[<ext:checkbox id="{{id}}" name="{{id}}" value="{{text}}" /> {{text}}]]>
+	</control>
+	<control name="ComboBoxStart" crlf="true">
+		<![CDATA[<ext:combobox id="{{id}}" name="{{id}}">]]>
+	</control>
+	<control name="ComboBoxItem" crlf="true">
+		<![CDATA[<ext:option value="{{item}}">{{item}}</option>]]>
+	</control>
+	<control name="ComboBoxEnd">
+		<![CDATA[</ext:combobox>]]>
+	</control>
+	<control name="Label">
+		<![CDATA[<ext:label for="{{id}}">{{text}}</label>]]>
+	</control>
+	<control name="TextArea">
+		<![CDATA[<ext:textarea id="{{id}}" name="{{id}}">{{text}}</ext:textarea>]]>
+	</control>
+	<control name="TextInput">
+		<![CDATA[<ext:input id="{{id}}" name="{{id}}" value="{{text}}" />]]>
+	</control>
+</format>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: fieldset, window/dialog -->
+<format type="html">
+	<control name="RowStart">
+		<![CDATA[<div class="row">]]>
+	</control>
+	<control name="RowEnd">
+		<![CDATA[</div>]]>
+	</control>
+	<control name="Button">
+		<![CDATA[<input type="submit" value="{{text}}" />]]>
+	</control>
+	<control name="CheckBox">
+		<![CDATA[<input type="checkbox" id="{{id}}" name="{{id}}" value="{{text}}" /> <label for="{{id}}">{{text}}</label>]]>
+	</control>
+	<control name="ComboBoxStart" crlf="true">
+		<![CDATA[<select id="{{id}}" name="{{id}}">]]>
+	</control>
+	<control name="ComboBoxOption" crlf="true" indent="1">
+		<![CDATA[<option value="{{item}}">{{item}}</option>]]>
+	</control>
+	<control name="ComboBoxEnd">
+		<![CDATA[</select>]]>
+	</control>
+	<control name="Label">
+		<![CDATA[<label class="label" for="{{id}}">{{text}}</label>]]>
+	</control>
+	<control name="RadioButton">
+		<![CDATA[<input type="radio" id="{{id}}" name="{{name}}" value="{{text}}" /> <label for="{{id}}">{{text}}</label>]]>
+	</control>
+	<control name="TextArea">
+		<![CDATA[<textarea id="{{id}}" name="{{id}}">{{text}}</textarea>]]>
+	</control>
+	<control name="TextInput">
+		<![CDATA[<input id="{{id}}" name="{{id}}" value="{{text}}" />]]>
+	</control>
+</format>
